@@ -2,6 +2,9 @@
 
 A machine learning project exploring how to detect fraudulent credit card transactions in a severely imbalanced dataset (only **0.17%** of transactions are fraud).
 
+The entire project is self-contained in a single, documented Jupyter Notebook:
+👉 **[`fraud_detection.ipynb`](fraud_detection.ipynb)**
+
 ---
 
 ## Why I Built This
@@ -96,10 +99,8 @@ credit-card-fraud-detection/
 ├── LICENSE                  # MIT License
 ├── README.md                # Project documentation and findings
 ├── requirements.txt         # Minimal Python dependencies
-├── fraud_detection.ipynb    # Clean walkthrough notebook
-├── eda.py                   # Simple script for stats and data charts
-├── train.py                 # Simple script to train and evaluate models
-└── images/                  # Generated plots for README
+├── fraud_detection.ipynb    # Complete end-to-end interactive notebook
+└── images/                  # Plots for the README
     ├── class_imbalance.png
     ├── amount_and_time.png
     ├── pr_and_roc_curves.png
@@ -108,7 +109,7 @@ credit-card-fraud-detection/
 
 ---
 
-## How to Run It Locally
+## How to Run the Notebook Locally
 
 ### 1. Clone the repository
 ```bash
@@ -136,19 +137,10 @@ Download `creditcard.csv` from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/
 kaggle datasets download -d mlg-ulb/creditcardfraud -p data --unzip
 ```
 
-### 4. Run the code
-- To run EDA:
-  ```bash
-  python eda.py
-  ```
-- To train and evaluate models:
-  ```bash
-  python train.py
-  ```
-- Or open the interactive notebook:
-  ```bash
-  jupyter notebook fraud_detection.ipynb
-  ```
+### 4. Open the notebook
+```bash
+jupyter notebook fraud_detection.ipynb
+```
 
 ---
 
